@@ -26,6 +26,41 @@ Helps optimize inventory planning, marketing campaigns, regional distribution st
 
 ---
 
+## 🗄 Data Model
+The project uses a **Star Schema architecture**, the most common modeling approach for analytical reporting systems.
+
+### Structure
+- **Fact Table** → `Fact Sales`  
+- **Dimension Tables** → `Dim Product`, `Dim Customer`, `Dim Geography`, `Dim Calendar`  
+- **Measures Table** → DAX calculations & KPIs  
+
+![Data Model](https://github.com/user-attachments/assets/787fc499-b67d-40dd-b3f7-35f8731c25f6)
+
+### Fact Table: `Fact Sales`
+Contains transactional sales data.  
+Key fields:
+- `billing_date`, `invoice_date`, `created_date`  
+- `invoice_quantity`, `bottles_quantity`  
+- `price`, `net_value`, `trade_discount`  
+- `customer_code`, `sku_code`, `btp_city`  
+
+Acts as the central table connected to all dimensions.
+
+### Dimension Tables
+- **Dim Product** → Product details (`brand_description`, `product_hierarchy`, `sku`, `plant`, `unit_of_measure`)  
+- **Dim Customer** → Customer info (`customer_code`, `customer_name`, `pricing_group_customer`)  
+- **Dim Geography** → Location hierarchy (`city`, `state`, `region`, `country`, `zone`, `sales_officer`)  
+- **Dim Calendar** → Date dimension (`Date`, `Month`, `Quarter`, `Year`, `Week Number`)  
+
+### Measures Table
+Contains all DAX measures, including:  
+- `Total Sales`, `Total Revenue`, `Gross Sales`  
+- `Discount %`, `Return %`  
+- `Sales YTD`, `Sales PY`, `Sales YoY %`  
+- `Average Order Price`, `ASP per Bottle`, `ASP per Case`
+
+---
+
 ## ⭐ Features & Highlights
 
 ### Business Problem
@@ -59,8 +94,11 @@ Provide an **interactive BI solution** to:
 ---
 
 ### Top & Least Sold Products
-- Highlights best & worst performing products  
-- Includes slicers for **Country (India, Bhutan, Sri Lanka)** and **Year → Month** filters  
+- **Top Product:** Imperial Spirit Co. → Highest sales volume & revenue  
+- **Least Sold Product:** CRGOLD 12x75 → Lowest performance  
+- **Business Impact:** Inventory planning, promotions, pricing adjustments  
+
+Includes slicers for **Country (India, Bhutan, Sri Lanka)**, **Region**, and **Year → Month** filters.  
 
 ---
 
@@ -116,3 +154,14 @@ Provide an **interactive BI solution** to:
 
 ## 🚀 Conclusion
 The **Alco & Bev Sales Dashboard** transforms raw transactional data into actionable insights, empowering organizations to make smarter decisions in inventory, marketing, and regional distribution.
+
+---
+
+## 📈 Final Insights
+From this dashboard, several key insights emerge:
+- Wholesalers drive the majority of alcohol sales.  
+- 24-bottle cases are the most popular packaging format.  
+- Sales increase significantly during festive seasons and holidays.  
+- The COVID-19 lockdown caused a major temporary drop in revenue.  
+- A few brands dominate the overall revenue contribution.  
+- Certain regions contribute significantly more revenue than others.  
