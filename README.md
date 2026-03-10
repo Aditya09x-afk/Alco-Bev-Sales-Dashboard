@@ -137,16 +137,6 @@ Includes slicers for **Country (India, Bhutan, Sri Lanka)**, **Region**, and **Y
 
 ---
 
-## 📈 Key Business Insights
-- Wholesalers drive majority of sales  
-- 24-bottle cases are most popular  
-- Sales spike during festive seasons & holidays  
-- COVID-19 lockdown caused major temporary drop  
-- Few brands dominate overall revenue  
-- Certain regions contribute significantly more than others  
-
----
-
 ## 📷 Dashboard Screenshots
 ![Main Dashboard](https://github.com/user-attachments/assets/4b3018d2-09e8-4e1a-a454-1ba103c91aba)
 
