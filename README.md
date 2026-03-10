@@ -17,13 +17,13 @@ The dashboard allows stakeholders to:
 
 These insights help companies optimize:
 
-Inventory planning
+1.Inventory planning
 
-Marketing campaigns
+2.Marketing campaigns
 
-Regional distribution strategies
+3.Regional distribution strategies
 
-Product portfolio decisions
+4.Product portfolio decisions
 
 🧰 Tech Stack
 
@@ -37,42 +37,21 @@ Primary platform used for building the interactive dashboard and visuals.
 
 Used for:
 
-Data cleaning
+1.Data cleaning
 
-Data transformation
+2.Data transformation
 
-Column restructuring
+3.Column restructuring
 
-Preparing the dataset for analysis
+4.Preparing the dataset for analysis
 
 🧠 DAX (Data Analysis Expressions)
 
-Used to create measures and calculations such as:
-
-Total Sales
-
-Total Revenue
-
-Discount %
-
-Return %
-
-Sales YTD
-
-Sales PY
-
-Year-over-Year Growth
-
-Average Selling Price
+Used to create measures and calculations.
 
 🗄 Data Modeling
 
 A Star Schema Data Model was implemented to improve query performance and enable efficient filtering across dimensions.
-
-📁 File Formats
-
-.pbix → Power BI dashboard file
-.png → Dashboard preview screenshots for GitHub
 
 🗄 Data Model
 
@@ -88,13 +67,13 @@ Business Problem
 
 Alcohol beverage companies generate massive volumes of transactional sales data across:
 
-distributors
+1.distributors
 
-regions
+2.regions
 
-brands
+3.brands
 
-product packaging
+4.product packaging
 
 However, it is difficult to quickly answer important questions such as:
 
@@ -128,62 +107,22 @@ Total Orders	590bn	Total number of transactions
 Return %	-0.01%	Percentage of returned goods
 
 These KPIs provide a quick snapshot of business performance.
-
 Top & Least Sold Products
-
 This section highlights the best and worst performing products.
-
-Top Product
-
-Example: Imperial Spirit Co.
-
-Insight:
-This product generated the highest sales volume and revenue.
-
-Business Impact:
-
-Maintain strong inventory levels
-
-Invest in marketing and promotions
-
-Least Sold Product
-
-Example: CRGOLD 12x75
-
-Insight:
-Lowest sales performance.
-
-Business Impact:
-
-Possible promotions
-
-Pricing adjustments
-
-Product lifecycle evaluation
-
-Interactive Filters
 
 The dashboard includes slicers that allow dynamic filtering.
 
 Country Filter
 
 Users can analyze performance across:
-
 India
-
 Bhutan
-
 Sri Lanka
 
-Region Filter
-
-Allows comparison across internal sales regions.
-
-Year → Month Filter
-
+Year → Month Filter:
 Allows users to explore time-based trends.
 
-Total Sales by State (Map Visualization)
+Total Sales by State (Map Visualization):
 
 This geographic bubble map shows sales distribution across states.
 
